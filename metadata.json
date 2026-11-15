@@ -1,0 +1,6 @@
+{
+  "name": "InternRadar",
+  "description": "AI-powered internship discovery, verified opportunity monitoring, skill matching, and student career development platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
