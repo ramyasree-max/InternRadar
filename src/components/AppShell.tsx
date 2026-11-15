@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext.tsx';
 import { apiFetch } from '../lib/api.ts';
+import studentAvatarImg from '../assets/images/student_avatar_portrait_1794642477326.jpg';
 
 const NAV_GROUPS = [
   {
@@ -161,7 +162,7 @@ export function AppShell({
             <>
               <div className="flex items-center gap-3 min-w-0">
                 <img
-                  src="/src/assets/images/student_avatar_portrait_1794642477326.jpg"
+                  src={studentAvatarImg}
                   alt={user.name}
                   referrerPolicy="no-referrer"
                   className="w-9 h-9 rounded-full object-cover shrink-0 bg-slate-700 ring-1 ring-white/15"

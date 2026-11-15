@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, ExternalLink, Radar, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../context/AuthContext.tsx';
 import { apiFetch, formatDateShort, formatDateTime } from '../lib/api.ts';
+import heroCareerWorkspaceImg from '../assets/images/hero_career_workspace_1794642476785.jpg';
+import studyDeskCareerImg from '../assets/images/study_desk_career_1794642477351.jpg';
 
 interface TransparencySummary {
   metrics: {
@@ -117,7 +119,7 @@ export function LandingPage() {
             <div className="lg:col-span-6">
               <div className="h-full min-h-[280px] rounded-xl overflow-hidden border border-slate-200 bg-[#14243A]">
                 <img
-                  src="/src/assets/images/hero_career_workspace_1794642476785.jpg"
+                  src={heroCareerWorkspaceImg}
                   alt="University engineering students collaborating in a sunlit studio"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -243,7 +245,7 @@ export function LandingPage() {
           <div className="lg:col-span-6 flex flex-col justify-between bg-white border border-slate-200 rounded-xl overflow-hidden">
             <div className="h-64 overflow-hidden bg-slate-100">
               <img
-                src="/src/assets/images/study_desk_career_1794642477351.jpg"
+                src={studyDeskCareerImg}
                 alt="Minimalist student developer desk with laptop and notebook"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
